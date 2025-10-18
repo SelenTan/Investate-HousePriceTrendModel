@@ -59,10 +59,9 @@ pred = pipe.predict(X_new)
 3. Get probability of upward trend
 prob = pipe.predict_proba(X_new)[:, 1]
 
-# Repository Structure
+### Repository Structure
 Investate-HousePriceTrendModel/
-│
-├── HousePriceTrendModel.ipynb     
-├── data/                          
-├── results/                       
-└── README.md                     
+├── HousePriceTrendModel.ipynb
+├── data/
+├── results/
+└── README.md                   
