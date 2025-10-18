@@ -62,7 +62,7 @@ prob = pipe.predict_proba(X_new)[:, 1]
 # Repository Structure
 Investate-HousePriceTrendModel/
 │
-├── HousePriceTrendModel.ipynb     # Main model notebook
-├── data/                          # (Optional) input data samples
-├── results/                       # confusion matrix, ROC curve outputs
-└── README.md                      # Documentation
+├── HousePriceTrendModel.ipynb     
+├── data/                          
+├── results/                       
+└── README.md                     
