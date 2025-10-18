@@ -16,12 +16,12 @@ The purpose of this model is to predict monthly price trends (up or down) in the
 
 # Tech Stack:
 
--Python 3.11
--Pandas, NumPy, scikit-learn
--Matplotlib / Seaborn for visualization
--Jupyter Notebook for experimentation and documentation
+- Python 3.11
+- Pandas, NumPy, scikit-learn
+- Matplotlib / Seaborn for visualization
+- Jupyter Notebook for experimentation and documentation
 
-🧮 Workflow
+# Workflow
 
 Data Preprocessing
 
@@ -49,17 +49,17 @@ Output accuracy, F1, AUC.
 
 Draw confusion matrix and ROC curve.
 
-Usage Example
-# Train the pipeline
+# Usage Example
+1. Train the pipeline
 pipe.fit(X_train, y_train)
 
-# Predict on new data (e.g., upcoming month)
+2. Predict on new data (e.g., upcoming month)
 pred = pipe.predict(X_new)
 
-# Get probability of upward trend
+3. Get probability of upward trend
 prob = pipe.predict_proba(X_new)[:, 1]
 
-
+# Repository Structure
 Investate-HousePriceTrendModel/
 │
 ├── HousePriceTrendModel.ipynb     # Main model notebook
