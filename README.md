@@ -9,6 +9,60 @@ The purpose of this model is to predict monthly price trends (up or down) in the
 - It integrates cleaned data from the UK Price Paid Dataset and produces both analytical insights and trend forecasts, which can later be connected to the Investate App’s property analytics dashboard.
 
 Key Objectives:
+
 - Build a predictive model for monthly housing market trend (Up/Down).
 - Support postcode level and regional trend visualization.
 - Provide an interpretable foundation for property investment recommendations.
+
+Tech Stack:
+
+Python 3.11
+Pandas, NumPy, scikit-learn
+Matplotlib / Seaborn for visualization
+Jupyter Notebook for experimentation and documentation
+
+🧮 Workflow
+
+Data Preprocessing
+
+Clean monthly transaction data.
+
+Aggregate by YearMonth and PostcodePrefix.
+
+Feature Engineering
+
+Add average price, % month change, property type, and volume metrics.
+
+Encoding
+
+One-hot encode categorical features with frequency filtering.
+
+Model Training
+
+Logistic Regression (SAGA), balanced class weights.
+
+Fit on training months, predict on test months.
+
+Evaluation & Visualization
+
+Output accuracy, F1, AUC.
+
+Draw confusion matrix and ROC curve.
+
+Usage Example
+# Train the pipeline
+pipe.fit(X_train, y_train)
+
+# Predict on new data (e.g., upcoming month)
+pred = pipe.predict(X_new)
+
+# Get probability of upward trend
+prob = pipe.predict_proba(X_new)[:, 1]
+
+
+Investate-HousePriceTrendModel/
+│
+├── HousePriceTrendModel.ipynb     # Main model notebook
+├── data/                          # (Optional) input data samples
+├── results/                       # confusion matrix, ROC curve outputs
+└── README.md                      # Documentation
