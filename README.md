@@ -16,10 +16,14 @@ The purpose of this model is to predict monthly price trends (up or down) in the
 
 # Tech Stack:
 
-- Python 3.11
-- Pandas, NumPy, scikit-learn
-- Matplotlib / Seaborn for visualization
-- Jupyter Notebook for experimentation and documentation
+Python 3.11
+
+Pandas, NumPy, scikit-learn
+
+Matplotlib / Seaborn for visualization
+
+Jupyter Notebook for experimentation and documentation
+
 
 # Workflow
 
@@ -50,13 +54,16 @@ Output accuracy, F1, AUC.
 Draw confusion matrix and ROC curve.
 
 # Usage Example
-1. Train the pipeline\n
+1. Train the pipeline
+
 pipe.fit(X_train, y_train)
 
-2. Predict on new data (e.g., upcoming month)\n
+3. Predict on new data (e.g., upcoming month)
+
 pred = pipe.predict(X_new)
 
-3. Get probability of upward trend\n
+4. Get probability of upward trend
+   
 prob = pipe.predict_proba(X_new)[:, 1]
 
 ### Repository Structure
