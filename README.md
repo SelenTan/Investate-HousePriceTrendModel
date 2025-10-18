@@ -50,18 +50,20 @@ Output accuracy, F1, AUC.
 Draw confusion matrix and ROC curve.
 
 # Usage Example
-1. Train the pipeline
+1. Train the pipeline\n
 pipe.fit(X_train, y_train)
 
-2. Predict on new data (e.g., upcoming month)
+2. Predict on new data (e.g., upcoming month)\n
 pred = pipe.predict(X_new)
 
-3. Get probability of upward trend
+3. Get probability of upward trend\n
 prob = pipe.predict_proba(X_new)[:, 1]
 
 ### Repository Structure
+```
 Investate-HousePriceTrendModel/
 ├── HousePriceTrendModel.ipynb
 ├── data/
 ├── results/
 └── README.md                   
+```
